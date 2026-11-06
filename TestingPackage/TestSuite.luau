@@ -16,7 +16,7 @@ type TestCase = {
 
 function TestSuite.new(name: string)
 	local self = {}
-	local self = setmetatable(self, TestSuite)
+	setmetatable(self, TestSuite)
 
 	self.name = name
 	self.tests = {}
