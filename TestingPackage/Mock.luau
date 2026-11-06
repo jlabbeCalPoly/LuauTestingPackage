@@ -13,7 +13,7 @@ Mock.__index = Mock
 
 function Mock.new(module : {[string]: any})
 	local self = {}
-	local self = setmetatable(self, Mock)
+	setmetatable(self, Mock)
 
 	self:initialize(module)
 	return self
